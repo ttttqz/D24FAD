@@ -1,1 +1,1 @@
-Dual-Distillation Network For Medical Few-shot Anomaly Detection
+Dual Distillation For Few-shot Anomaly Detection
