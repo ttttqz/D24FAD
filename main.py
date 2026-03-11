@@ -79,8 +79,8 @@ def train(_class_, shot):
     decoder = decoder.to(device)
     learning_weight = learning_weight.to(device)
     
-    optimizer = torch.optim.Adam(list(decoder.parameters()) , lr=learning_rate, betas=(0.5, 0.999))
-
+    optimizer = torch.optim.Adam(list(decoder.parameters()) + list(learning_weight.parameters()) , lr=learning_rate, betas=(0.5, 0.999))
+    
     # img_roc_auc = evaluation(encoder, decoder, test_dataloader, device, _class_, shot, batch_size, image_size, learning_weight)
     # print('img_roc_auc:{:.4f}--class:{}--shot:{}'.format(img_roc_auc, _class_, shot))
     
