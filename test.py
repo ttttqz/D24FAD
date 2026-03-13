@@ -139,6 +139,7 @@ def evaluation(encoder, decoder, dataloader, device, _class_, shot, batch, size,
         #     count += 1
         
         # calculate image-level ROC AUC score
+        # img_scores = scores.reshape(scores.shape[0], -1).mean(axis=1)
         img_scores = scores.reshape(scores.shape[0], -1).max(axis=1)
         gt_list = np.asarray(gt_list)
         img_roc_auc = roc_auc_score(gt_list, img_scores)
