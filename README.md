@@ -50,11 +50,11 @@ python main.py
 ## Reference
 
 ```bibtex
-@misc{dong2026dualdistillationfewshotanomaly,
-      title={Dual Distillation for Few-Shot Anomaly Detection}, 
+@inproceedings{dong2026dual,
+      title={Dual Distillation for Few-Shot Anomaly Detection},
       author={Le Dong and Qinzhong Tan and Chunlei Li and Jingliang Hu and Yilei Shi and Weisheng Dong and Xiao Xiang Zhu and Lichao Mou},
+      booktitle={The Fourteenth International Conference on Learning Representations},
       year={2026},
-      eprint={2603.01713},
-      archivePrefix={arXiv}
+      url={https://openreview.net/forum?id=tRO6G20Qba}
 }
 ```
